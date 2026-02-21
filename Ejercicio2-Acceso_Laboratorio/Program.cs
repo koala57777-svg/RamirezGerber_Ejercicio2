@@ -26,16 +26,15 @@ Console.WriteLine("");
 Console.WriteLine("¿Trae una USB? (S/N)");
 Console.WriteLine("");
 string traeUSB = Console.ReadLine();
-if (traeUSB=="S")
+Console.WriteLine("¿Tiene compañia? (S/N)");
+string compania = Console.ReadLine();
+
+
+if (horaIngreso >= 0 && horaIngreso <= 23 && dia >= 1 && dia<=7 && (carnet=="S" || carnet=="N") && (autorizacion=="S" || autorizacion=="N") && (traeUSB=="S" || traeUSB=="N") && (compania == "S" || compania == "N"))
 {
-    Console.WriteLine("¿Está acompañado? (S/N)");
-    string acompa= Console.ReadLine();
+
 }
 else
 {
-    
+    Console.WriteLine("Datos inválidos. Por favor ingrese datos válidos.");
 }
-
-
-
-
