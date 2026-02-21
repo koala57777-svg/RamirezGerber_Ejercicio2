@@ -32,7 +32,28 @@ string compania = Console.ReadLine();
 
 if (horaIngreso >= 0 && horaIngreso <= 23 && dia >= 1 && dia<=7 && (carnet=="S" || carnet=="N") && (autorizacion=="S" || autorizacion=="N") && (traeUSB=="S" || traeUSB=="N") && (compania == "S" || compania == "N"))
 {
+    switch (rol)
+    {
+        case 1:
 
+            break;
+
+        case 2:
+
+            break;
+
+        case 3:
+
+            break;
+
+        case 4:
+
+            break;
+
+        default:
+            Console.WriteLine("Rol no válido. Por favor seleccione un rol válido.");
+            break;
+    }
 }
 else
 {
