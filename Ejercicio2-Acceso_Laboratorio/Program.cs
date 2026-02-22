@@ -28,6 +28,7 @@ Console.WriteLine("");
 string traeUSB = Console.ReadLine();
 Console.WriteLine("¿Tiene compañia? (S/N)");
 string compania = Console.ReadLine();
+Console.WriteLine("");
 
 
 if (horaIngreso >= 0 && horaIngreso <= 23 && dia >= 1 && dia<=7 && (carnet=="S" || carnet=="N") && (autorizacion=="S" || autorizacion=="N") && (traeUSB=="S" || traeUSB=="N") && (compania == "S" || compania == "N"))
