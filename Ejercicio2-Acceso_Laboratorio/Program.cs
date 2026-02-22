@@ -35,19 +35,102 @@ if (horaIngreso >= 0 && horaIngreso <= 23 && dia >= 1 && dia<=7 && (carnet=="S" 
     switch (rol)
     {
         case 1:
-
+            if (dia >= 1 && dia <= 5 && horaIngreso >= 7 && horaIngreso <= 18 && carnet=="S")
+            {
+                if (traeUSB == "S" && compania == "S")
+                {
+                    Console.WriteLine("Acceso: Permitdo");
+                    Console.WriteLine("Nivel de permiso: Medio");
+                }
+                else if (traeUSB == "S" && compania == "N")
+                {
+                    Console.WriteLine("Acceso: Denegado");
+                    Console.WriteLine("Nivel de permiso: Sin acceso");
+                }
+                else
+                {
+                    Console.WriteLine("Acceso: Permitdo");
+                    Console.WriteLine("Nivel de permiso: Medio");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Acceso: Denegado");
+                Console.WriteLine("Nivel de permiso: Sin acceso");
+            }
             break;
 
         case 2:
-
+            if (horaIngreso >= 6 && horaIngreso <= 2)
+            {
+                if (traeUSB == "S" && compania == "S")
+                {
+                    Console.WriteLine("Acceso: Permitdo");
+                    Console.WriteLine("Nivel de permiso: Medio-alto");
+                }
+                else if (traeUSB == "S" && compania == "N")
+                {
+                    Console.WriteLine("Acceso: Denegado");
+                    Console.WriteLine("Nivel de permiso: Sin acceso");
+                }
+                else
+                {
+                    Console.WriteLine("Acceso: Permitdo");
+                    Console.WriteLine("Nivel de permiso: Medio-alto");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Acceso: Denegado");
+                Console.WriteLine("Nivel de permiso: Sin acceso");
+            }
             break;
 
         case 3:
-
+            if (autorizacion=="S")
+            {
+                if (traeUSB == "S" && compania == "S")
+                {
+                    Console.WriteLine("Acceso: Permitdo");
+                    Console.WriteLine("Nivel de permiso: Alto");
+                }
+                else if (traeUSB == "S" && compania == "N")
+                {
+                    Console.WriteLine("Acceso: Denegado");
+                    Console.WriteLine("Nivel de permiso: Sin acceso");
+                }
+                else
+                {
+                    Console.WriteLine("Acceso: Permitdo");
+                    Console.WriteLine("Nivel de permiso: Alto");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Acceso: Denegado");
+                Console.WriteLine("Nivel de permiso: Sin acceso");
+            }
             break;
 
         case 4:
-
+            if (autorizacion == "S" && compania=="S" && horaIngreso>=8 && horaIngreso<=14 && (dia==2 || dia==4))
+            {
+                if (traeUSB == "S")
+                {
+                    Console.WriteLine("Acceso: Permitdo");
+                    Console.WriteLine("Nivel de permiso: Bajo");
+                }
+                else if (traeUSB == "N")
+                {
+                    Console.WriteLine("Acceso: Permitdo");
+                    Console.WriteLine("Nivel de permiso: Bajo");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Acceso: Denegado");
+                Console.WriteLine("Nivel de permiso: Sin acceso");
+            }
             break;
 
         default:
